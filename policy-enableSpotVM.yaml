@@ -1,0 +1,4 @@
+name: folders/FOLDER_ID/policies/custom.enableSpotVM
+spec:
+  rules:
+  - enforce: true

@@ -1,0 +1,9 @@
+name: organizations/ORGANIZATION_ID/customConstraints/custom.enablePrivateEndpoint
+resource_types: container.googleapis.com/Cluster
+method_types:
+ - CREATE
+ - UPDATE
+condition: resource.privateClusterConfig.enablePrivateEndpoint == true
+action_type: ALLOW
+display_name: Enable GKE Private Endpoint
+description: Only allow GKE Cluster resource create or update if Private Endpoint is enabled

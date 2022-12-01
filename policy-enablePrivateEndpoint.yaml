@@ -1,0 +1,4 @@
+name: folders/FOLDER_ID/policies/custom.enablePrivateEndpoint
+spec:
+  rules:
+  - enforce: true

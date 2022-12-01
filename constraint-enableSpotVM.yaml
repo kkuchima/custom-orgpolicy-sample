@@ -1,0 +1,9 @@
+name: organizations/ORGANIZATION_ID/customConstraints/custom.enableSpotVM
+resourceTypes:
+- container.googleapis.com/NodePool
+methodTypes:
+- CREATE
+condition: resource.config.spot == true
+actionType: ALLOW
+displayName: Enable Spot VMs
+description: All cluster nodes must be Spot VMs.

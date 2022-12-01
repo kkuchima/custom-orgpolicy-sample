@@ -1,0 +1,9 @@
+name: organizations/ORGANIZATION_ID/customConstraints/custom.disableAlphaClusters
+resourceTypes:
+- container.googleapis.com/Cluster
+methodTypes:
+- CREATE
+condition: resource.enableKubernetesAlpha == true
+actionType: DENY
+displayName: Disable Alpha Clusters
+description: All new GKE clusters must have Alpha Clusters disabled

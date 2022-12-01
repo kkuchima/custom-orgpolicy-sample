@@ -1,0 +1,9 @@
+name: organizations/ORGANIZATION_ID/customConstraints/custom.requireCOSNode
+resourceTypes:
+- container.googleapis.com/NodePool
+methodTypes:
+- CREATE
+condition: resource.config.imageType == "COS_CONTAINERD"
+actionType: ALLOW
+displayName: Require COS Nodes
+description: All cluster nodes must be COS.

@@ -1,0 +1,4 @@
+name: folders/FOLDER_ID/policies/custom.disableAlphaClusters
+spec:
+  rules:
+  - enforce: true
